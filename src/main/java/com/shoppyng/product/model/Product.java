@@ -1,4 +1,4 @@
-package com.shoppyng.cart.model;
+package com.shoppyng.product.model;
 
 import java.math.BigDecimal;
 import java.util.Objects;
@@ -11,6 +11,10 @@ public class Product {
     /* simple price implementation */
     private BigDecimal price;
 
+    public Product(String s, String sample_product, String createProduct, BigDecimal i) {
+    }
+    public Product(String s) {
+    }
     public String getReference() {
         return reference;
     }

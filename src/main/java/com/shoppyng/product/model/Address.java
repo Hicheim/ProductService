@@ -1,6 +1,4 @@
-package com.shoppyng.cart.model;
-
-import java.util.Date;
+package com.shoppyng.product.model;
 
 /**
  * Simple empty class for test purpose

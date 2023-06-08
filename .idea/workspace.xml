@@ -1,100 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="638b7228-086d-43ab-b48c-a3526ac2400b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/atm/cortex/designer/model/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestCampaign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test" afterDir="false" />
+    <list default="true" id="638b7228-086d-43ab-b48c-a3526ac2400b" name="Default Changelist" comment="Esquisse de l'aplication. Classe Campagne somple controller. Swagger, Json">
+      <change afterPath="$PROJECT_DIR$/.run/product-service.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoppyng/product/api/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoppyng/product/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/shoppyng/service/api/test/ProductControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/atm/cortex/designer/controller/SimpleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/atm/cortex/designer/controller/SimpleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/atm/cortex/designer/model/Campaign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/atm/cortex/designer/model/Campaign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoppyng/product/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/api/SimpleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoppyng/product/model/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/model/CartItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/model/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoppyng/product/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/model/ShoppingCart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/service/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/service/ShoppingCartService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/shoppyng/service/test/ShoppingCartTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/api/ShoppingCartErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/api/ShoppingCartErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/api/SimpleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/api/SimpleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/model/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/model/CartItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/model/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/model/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/service/ShoppingCartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/test/java/com/shoppyng/service/test/ShoppingCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/test/java/com/shoppyng/service/test/ShoppingCartTest.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="service" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/atm/cortex/designer/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#245#246#0" expanded="true" />
-                <element signature="e#307#308#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/atm/cortex/designer/controller/SimpleController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/atm/cortex/designer/model/Campaign.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1309#1310#0" expanded="true" />
-                <element signature="e#1364#1365#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestCampaign.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/atm/cortex/designer/model/Status.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -136,6 +87,16 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
@@ -162,12 +123,16 @@
       <select />
     </treeState>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="54" />
     <option name="width" value="1390" />
     <option name="height" value="972" />
   </component>
+  <component name="ProjectId" id="2Qk2LM8sw9rDhL9levaV0lHka4J" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -252,37 +217,87 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603460373421" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/atm/cortex/designer" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "E:/project/flexmove-location",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\product-service\src\test\java\com\shoppyng\service" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestCampaign">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="atm.cortex.designer.Application" />
-      <module name="cortex-designer-service" />
+  <component name="RunManager" selected="JUnit.ProductControllerTest.testCreateProduct_Success">
+    <configuration name="ProductControllerTest.testCreateProduct_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="product-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="atm.cortex.designer.*" />
+          <option name="PATTERN" value="com.shoppyng.service.api.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.shoppyng.service.api.test" />
+      <option name="MAIN_CLASS_NAME" value="com.shoppyng.service.api.test.ProductControllerTest" />
+      <option name="METHOD_NAME" value="testCreateProduct_Success" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductControllerTest.testGetProduct_NotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="product-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shoppyng.service.api.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shoppyng.service.api.test" />
+      <option name="MAIN_CLASS_NAME" value="com.shoppyng.service.api.test.ProductControllerTest" />
+      <option name="METHOD_NAME" value="testGetProduct_NotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductControllerTest.testGetProduct_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="product-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shoppyng.service.api.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shoppyng.service.api.test" />
+      <option name="MAIN_CLASS_NAME" value="com.shoppyng.service.api.test.ProductControllerTest" />
+      <option name="METHOD_NAME" value="testGetProduct_Success" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductControllerTest.testUpdateProduct_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="product-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shoppyng.service.api.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shoppyng.service.api.test" />
+      <option name="MAIN_CLASS_NAME" value="com.shoppyng.service.api.test.ProductControllerTest" />
+      <option name="METHOD_NAME" value="testUpdateProduct_Success" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -291,6 +306,7 @@
       <module name="cortex-designer-service" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestCampaign" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -326,13 +342,75 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="product-service [clean]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings">
+          <MavenGeneralSettings>
+            <option name="alwaysUpdateSnapshots" value="false" />
+            <option name="checksumPolicy" value="NOT_SET" />
+            <option name="failureBehavior" value="NOT_SET" />
+            <option name="localRepository" value="" />
+            <option name="mavenHome" value="Bundled (Maven 3)" />
+            <option name="nonRecursive" value="false" />
+            <option name="outputLevel" value="INFO" />
+            <option name="pluginUpdatePolicy" value="DEFAULT" />
+            <option name="printErrorStackTraces" value="false" />
+            <option name="showDialogWithAdvancedSettings" value="false" />
+            <option name="threads" />
+            <option name="useMavenConfig" value="false" />
+            <option name="usePluginRegistry" value="false" />
+            <option name="userSettingsFile" value="" />
+            <option name="workOffline" value="false" />
+          </MavenGeneralSettings>
+        </option>
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductControllerTest.testCreateProduct_Success" />
+        <item itemvalue="JUnit.ProductControllerTest.testUpdateProduct_Success" />
+        <item itemvalue="JUnit.ProductControllerTest.testGetProduct_NotFound" />
+        <item itemvalue="JUnit.ProductControllerTest.testGetProduct_Success" />
         <item itemvalue="JUnit.TestCampaign" />
-        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -409,9 +487,28 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Esquisse de l'aplication. Classe Campagne somple controller. Swagger, Json" />
     <option name="LAST_COMMIT_MESSAGE" value="Esquisse de l'aplication. Classe Campagne somple controller. Swagger, Json" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/service$ProductControllerTest_testCreateProduct_Success.ic" NAME="ProductControllerTest.testCreateProduct_Success Coverage Results" MODIFIED="1685970792702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.shoppyng.service.api.test.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/service$ProductControllerTest_testGetProduct_Success.ic" NAME="ProductControllerTest.testGetProduct_Success Coverage Results" MODIFIED="1685970266818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.shoppyng.service.api.test.*</FILTER>
+    </SUITE>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Hello.html" />
