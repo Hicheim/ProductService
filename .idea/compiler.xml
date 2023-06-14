@@ -10,10 +10,12 @@
         <module name="stock-service" />
         <module name="product-service" />
         <module name="inventory-service" />
-        <module name="shoppingcart-service" />
         <module name="cortex-designer-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="shoppingcart-service" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
