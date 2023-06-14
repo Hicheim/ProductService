@@ -1,4 +1,4 @@
-package com.shoppyng.product.model;
+package com.shopping.product.model;
 
 /**
  * Simple empty class for test purpose

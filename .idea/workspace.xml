@@ -5,42 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638b7228-086d-43ab-b48c-a3526ac2400b" name="Default Changelist" comment="Esquisse de l'aplication. Classe Campagne somple controller. Swagger, Json">
-      <change afterPath="$PROJECT_DIR$/.run/product-service.run.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoppyng/product/api/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shoppyng/product/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/shoppyng/service/api/test/ProductControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/product/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoppyng/product/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/api/SimpleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoppyng/product/model/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/model/CartItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/model/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shoppyng/product/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/model/ShoppingCart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/service/CustomerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/service/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/cart/service/ShoppingCartService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/shoppyng/service/test/ShoppingCartTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/api/ShoppingCartErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/api/ShoppingCartErrorHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/api/SimpleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/api/SimpleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/model/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/model/CartItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/model/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/model/ShoppingCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/cart/service/ShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/main/java/com/shoppyng/product/service/ShoppingCartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shoppingcart-service/src/test/java/com/shoppyng/service/test/ShoppingCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../shoppingcart-service/src/test/java/com/shoppyng/service/test/ShoppingCartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/product/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopping/product/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/product/api/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopping/product/api/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/product/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopping/product/model/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/product/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopping/product/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shoppyng/product/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopping/product/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/shoppyng/service/api/test/ProductControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/shopping/service/api/test/ProductControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +203,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "E:/project/flexmove-location",
+    "last_opened_file_path": "E:/project/product-service/src/main/resources",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -233,80 +211,85 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\product-service\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\project\product-service\src\test\java\com\shoppyng\service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProductControllerTest.testCreateProduct_Success">
-    <configuration name="ProductControllerTest.testCreateProduct_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ProductControllerTest">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shopping.product.Application" />
       <module name="product-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shoppyng.service.api.test.*" />
+          <option name="PATTERN" value="com.shopping.product.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.shoppyng.service.api.test" />
-      <option name="MAIN_CLASS_NAME" value="com.shoppyng.service.api.test.ProductControllerTest" />
-      <option name="METHOD_NAME" value="testCreateProduct_Success" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductControllerTest.testGetProduct_NotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="product-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shoppyng.service.api.test.*" />
+          <option name="PATTERN" value="com.shopping.service.api.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.shoppyng.service.api.test" />
-      <option name="MAIN_CLASS_NAME" value="com.shoppyng.service.api.test.ProductControllerTest" />
-      <option name="METHOD_NAME" value="testGetProduct_NotFound" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductControllerTest.testGetProduct_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="product-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.shoppyng.service.api.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.shoppyng.service.api.test" />
-      <option name="MAIN_CLASS_NAME" value="com.shoppyng.service.api.test.ProductControllerTest" />
-      <option name="METHOD_NAME" value="testGetProduct_Success" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductControllerTest.testUpdateProduct_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="product-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.shoppyng.service.api.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.shoppyng.service.api.test" />
-      <option name="MAIN_CLASS_NAME" value="com.shoppyng.service.api.test.ProductControllerTest" />
-      <option name="METHOD_NAME" value="testUpdateProduct_Success" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCampaign" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cortex-designer-service" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestCampaign" />
+      <option name="PACKAGE_NAME" value="com.shopping.service.api.test" />
+      <option name="MAIN_CLASS_NAME" value="com.shopping.service.api.test.ProductControllerTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductControllerTest.testGetAllProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="product-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shopping.service.api.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shopping.service.api.test" />
+      <option name="MAIN_CLASS_NAME" value="com.shopping.service.api.test.ProductControllerTest" />
+      <option name="METHOD_NAME" value="testGetAllProducts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="product-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shopping.service.api.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shopping.service.api.test" />
+      <option name="MAIN_CLASS_NAME" value="com.shopping.service.api.test.ProductControllerTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductControllerTests.testGetProduct_ReturnsNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="product-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shopping.service.api.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shopping.service.api.test" />
+      <option name="MAIN_CLASS_NAME" value="com.shopping.service.api.test.ProductControllerTests" />
+      <option name="METHOD_NAME" value="testGetProduct_ReturnsNotFound" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -402,11 +385,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProductControllerTest.testCreateProduct_Success" />
-        <item itemvalue="JUnit.ProductControllerTest.testUpdateProduct_Success" />
-        <item itemvalue="JUnit.ProductControllerTest.testGetProduct_NotFound" />
-        <item itemvalue="JUnit.ProductControllerTest.testGetProduct_Success" />
-        <item itemvalue="JUnit.TestCampaign" />
+        <item itemvalue="JUnit.ProductControllerTest" />
+        <item itemvalue="JUnit.ProductControllerTest.testGetAllProducts" />
+        <item itemvalue="JUnit.ProductControllerTests" />
+        <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.ProductControllerTests.testGetProduct_ReturnsNotFound" />
       </list>
     </recent_temporary>
   </component>
