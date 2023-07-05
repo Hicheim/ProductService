@@ -29,7 +29,7 @@ public class ProductService {
     }
 
     public Optional<Product> getProductById(int id) {
-        return productRepository.findById(String.valueOf(id));
+        return productRepository.findById(id);
     }
 
     public List<Product> getAllProducts() {
@@ -37,15 +37,15 @@ public class ProductService {
     }
 
     public boolean deleteProductById(int id) {
-        if (productRepository.existsById(String.valueOf(id))) {
-            productRepository.deleteById(String.valueOf(id));
+        if (productRepository.existsById(id)) {
+            productRepository.deleteById(id);
             return true;
         }
         return false;
     }
 
     public boolean updateProduct(int id, Product updatedProduct) {
-        Optional<Product> productOptional = productRepository.findById(String.valueOf(id));
+        Optional<Product> productOptional = productRepository.findById(id);
         if (productOptional.isPresent()) {
             Product product = productOptional.get();
             product.setReference(updatedProduct.getReference());

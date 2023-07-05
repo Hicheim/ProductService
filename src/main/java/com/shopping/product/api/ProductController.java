@@ -26,7 +26,7 @@ public class ProductController {
      }
 
      @GetMapping("/{id}")
-     public ResponseEntity<Product> getProduct(@PathVariable("id") String id) {
+     public ResponseEntity<Product> getProduct(@PathVariable("id") Integer id) {
           return productRepository.findById(id)
                   .map(ResponseEntity::ok)
                   .orElse(ResponseEntity.notFound().build());
@@ -39,9 +39,9 @@ public class ProductController {
      }
 
      @PutMapping("/{id}")
-     public ResponseEntity<Product> updateProduct(@PathVariable("id") String id, @RequestBody Product product) {
+     public ResponseEntity<Product> updateProduct(@PathVariable("id") Integer id, @RequestBody Product product) {
           if (productRepository.existsById(id)) {
-               product.setReference(id);
+               //product.fi setId(id);
                Product updatedProduct = productRepository.save(product);
                return ResponseEntity.ok(updatedProduct);
           } else {
@@ -50,7 +50,7 @@ public class ProductController {
      }
 
      @DeleteMapping("/{id}")
-     public ResponseEntity<Void> deleteProduct(@PathVariable("id") String id) {
+     public ResponseEntity<Void> deleteProduct(@PathVariable("id") Integer id) {
           if (productRepository.existsById(id)) {
                productRepository.deleteById(id);
                return ResponseEntity.noContent().build();
