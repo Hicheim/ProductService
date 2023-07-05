@@ -19,13 +19,8 @@ public class ProductService {
         this.productRepository = productRepository;
     }
 
-    public Product createProduct(String reference, String name, String description, BigDecimal price) {
-        Product product = new Product();
-        product.setReference(reference);
-        product.setName(name);
-        product.setDescription(description);
-        product.setPrice(price);
-        return productRepository.save(product);
+    public Product createProduct(Product product) {
+         return productRepository.save(product);
     }
 
     public Optional<Product> getProductById(int id) {
