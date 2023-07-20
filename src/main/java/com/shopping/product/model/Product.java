@@ -19,7 +19,7 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 
     @Column
     private String reference;
@@ -31,7 +31,7 @@ public class Product {
     @Column
     private BigDecimal price;
 
-    public Product(int id, String reference, String name, String description, BigDecimal price) {
+    public Product(long id, String reference, String name, String description, BigDecimal price) {
         this.id = id;
         this.reference = reference;
         this.name = name;

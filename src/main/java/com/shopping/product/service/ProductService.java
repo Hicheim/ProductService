@@ -19,11 +19,16 @@ public class ProductService {
         this.productRepository = productRepository;
     }
 
-    public Product createProduct(Product product) {
-         return productRepository.save(product);
+    public Product createProduct(String reference,String name, String description, BigDecimal price ) {
+        Product product = new Product();
+        product.setDescription(description);
+        product.setName(name);
+        product.setPrice(price);
+        product.setReference(reference);
+        return productRepository.save(product);
     }
 
-    public Optional<Product> getProductById(int id) {
+    public Optional<Product> getProductById(long id) {
         return productRepository.findById(id);
     }
 
@@ -31,7 +36,7 @@ public class ProductService {
         return productRepository.findAll();
     }
 
-    public boolean deleteProductById(int id) {
+    public boolean deleteProductById(long id) {
         if (productRepository.existsById(id)) {
             productRepository.deleteById(id);
             return true;
@@ -39,7 +44,7 @@ public class ProductService {
         return false;
     }
 
-    public boolean updateProduct(int id, Product updatedProduct) {
+    public boolean updateProduct(long id, Product updatedProduct) {
         Optional<Product> productOptional = productRepository.findById(id);
         if (productOptional.isPresent()) {
             Product product = productOptional.get();
@@ -52,4 +57,5 @@ public class ProductService {
         }
         return false;
     }
+
 }
