@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
     // You can add custom query methods or use the default methods provided by JpaRepository
+    Boolean findByReferenceAndName(String reference, String name);
 }

@@ -20,12 +20,16 @@ public class ProductService {
     }
 
     public Product createProduct(String reference,String name, String description, BigDecimal price ) {
-        Product product = new Product();
-        product.setDescription(description);
-        product.setName(name);
-        product.setPrice(price);
-        product.setReference(reference);
-        return productRepository.save(product);
+        boolean valid = productRepository.findByReferenceAndName(reference, name);
+        //Product product = Product.builder().name(name).description(description).reference(reference).price(price).build();
+         if (!valid){
+            Product product = new Product();
+            product.setDescription(description);
+            product.setName(name);
+            product.setPrice(price);
+            product.setReference(reference);
+            return productRepository.save(product);}
+        return null;
     }
 
     public Optional<Product> getProductById(long id) {
@@ -36,18 +40,20 @@ public class ProductService {
         return productRepository.findAll();
     }
 
-    public boolean deleteProductById(long id) {
-        if (productRepository.existsById(id)) {
-            productRepository.deleteById(id);
+    public boolean deleteProductById(long productId) {
+        Optional<Product> productOptional = productRepository.findById(productId);
+        if (productOptional.isPresent()) {
+            productRepository.delete(productOptional.get());
             return true;
         }
         return false;
     }
-
     public boolean updateProduct(long id, Product updatedProduct) {
         Optional<Product> productOptional = productRepository.findById(id);
         if (productOptional.isPresent()) {
             Product product = productOptional.get();
+            product.getId();
+            // product.builder().name(updatedProduct.getName()).description(updatedProduct.getDescription()).reference(updatedProduct.getReference()).price(updatedProduct.getPrice()).build();
             product.setReference(updatedProduct.getReference());
             product.setName(updatedProduct.getName());
             product.setDescription(updatedProduct.getDescription());
