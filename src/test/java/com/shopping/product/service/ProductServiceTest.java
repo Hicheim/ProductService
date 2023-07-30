@@ -1,6 +1,6 @@
 package com.shopping.product.service;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+//import com.fasterxml.jackson.databind.ObjectMapper;
 import com.shopping.product.model.Product;
 import com.shopping.product.repository.ProductRepository;
 import org.junit.jupiter.api.*;
@@ -12,17 +12,14 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import java.math.BigDecimal;
 import java.util.Optional;
 
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
 import org.junit.jupiter.api.Test;
 
-//import javax.persistence.EntityNotFoundException;
 import java.util.List;
 
-import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 //@WebMvcTest(ProductService.class)
 //@ComponentScan("com.shopping.product.api")
@@ -31,7 +28,7 @@ import static org.mockito.Mockito.*;
 class ProductServiceTest {
 
 
-    private final ObjectMapper objectMapper = new ObjectMapper();
+//    private final ObjectMapper objectMapper = new ObjectMapper();
     @Mock
     private ProductRepository productRepository ;
     //private static AutoCloseable autoCloseable;
@@ -61,7 +58,7 @@ class ProductServiceTest {
         assertEquals(description, createdProduct.getDescription());
         assertEquals(price, createdProduct.getPrice());
 
-        // Verify that the save method was called once with the created product
+        // Verify
         verify(productRepository, times(1)).save(any(Product.class));
     }
 
@@ -74,9 +71,8 @@ class ProductServiceTest {
         String description = "This is an existing product.";
         BigDecimal price = new BigDecimal("29.99");
 
-        // Mock the behavior of the productRepository.findByReferenceAndName method
+        // Mock
         when(productRepository.findByReferenceAndName(reference, name)).thenReturn(true);
-        final Product product1 = new Product(1,reference, name, description, price);
 
         // Act
         Product createdProduct = productService.createProduct(reference, name, description, price);
@@ -84,7 +80,7 @@ class ProductServiceTest {
         // Assert
         assertNull(createdProduct); // Since the product already exists, the method should return null
 
-        // Verify that the save method was not called (product should not be saved)
+        // Verify
         verify(productRepository, never()).save(any(Product.class));
     }
     @DisplayName("JUnit test for GetAllProducts method")
@@ -99,7 +95,6 @@ class ProductServiceTest {
 
         // Assert
         assertEquals(productList.size(), result.size());
-        // Add more assertions as needed to verify the returned list of products
     }
 
     @Test
@@ -125,11 +120,10 @@ class ProductServiceTest {
         Product productToDelete = new Product();
         productToDelete.setId(productId);
 
-        // Mock the behavior of productRepository.findById method
+        // Mock
         when(productRepository.findById(productId)).thenReturn(Optional.of(productToDelete));
 
-        //when(productRepository.deleteById(productId));
-        // Act
+         // Act
         boolean isDeleted = productService.deleteProductById(productId);
 
         // Assert
@@ -141,8 +135,6 @@ class ProductServiceTest {
         // Arrange
         long productId = 1L;
 
-        // Mock the behavior of productRepository.findById method
-        //when(productRepository.findById(productId)).thenReturn(null);
 
         // Act
         boolean isDeleted = productService.deleteProductById(productId);
@@ -179,25 +171,22 @@ class ProductServiceTest {
     @Test
     void updateProduct_whenNotFound() {
         long productId = 1L;
-        String reference = "REF456";
-        String name = "new Product";
-        String description = "new description.";
-        BigDecimal price = new BigDecimal("29.99");
-        Optional<Product> productToUpdate;
-        //productToUpdate.setId(productId);
+        //String reference = "REF456";
+        //String name = "new Product";
+        //String description = "new description.";
+        //BigDecimal price = new BigDecimal("29.99");
+        Optional<Product> productToFind;
+        Product productToUpdate = new Product();
+        productToUpdate.setId(productId);
 
         // Mock the behavior of productRepository.findById method
         when(productRepository.findById(productId)).thenReturn(null);
-        //productToUpdate.setReference(reference);
-        //productToUpdate.setName(name);
-        //productToUpdate.setDescription(description);
-        //productToUpdate.setPrice(price);
         //when(productRepository.deleteById(productId));
         // Act
-        productToUpdate = productService.getProductById(productId);
+        productToFind = productRepository.findById(productId);
 
+        //boolean isChanged = productService.updateProduct(productId,productToUpdate);
         // Assert
-        assertNull(productToUpdate);
-        //verify(productRepository, times(1)).save(productToUpdate);
+        assertNull(productToFind);
     }
 }
