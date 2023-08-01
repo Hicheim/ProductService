@@ -1,25 +1,21 @@
 package com.shopping.product.service;
 
-//import com.fasterxml.jackson.databind.ObjectMapper;
 import com.shopping.product.model.Product;
 import com.shopping.product.repository.ProductRepository;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.when;
-
-import org.junit.jupiter.api.Test;
-
-import java.util.List;
-
 import static org.mockito.Mockito.*;
 //@WebMvcTest(ProductService.class)
 //@ComponentScan("com.shopping.product.api")
@@ -28,7 +24,6 @@ import static org.mockito.Mockito.*;
 class ProductServiceTest {
 
 
-//    private final ObjectMapper objectMapper = new ObjectMapper();
     @Mock
     private ProductRepository productRepository ;
     //private static AutoCloseable autoCloseable;
@@ -45,7 +40,7 @@ class ProductServiceTest {
         BigDecimal price = new BigDecimal("19.99");
         Product createdProduct =  new Product(1,reference,name,description,price);
         // Mock the behavior of the productRepository.findByReferenceAndName method
-        when(productRepository.findByReferenceAndName(reference, name)).thenReturn(false);
+        when(productRepository.findByReferenceAndName(reference, name)).thenReturn(null);
         when(productRepository.save(any())).thenReturn(createdProduct);
 
         // Act
@@ -70,9 +65,11 @@ class ProductServiceTest {
         String name = "Existing Product";
         String description = "This is an existing product.";
         BigDecimal price = new BigDecimal("29.99");
-
+        final Product product1 = new Product(1,reference, name, description, price);
+        List<Product> prct=  new ArrayList<>();
+        prct.add(product1);
         // Mock
-        when(productRepository.findByReferenceAndName(reference, name)).thenReturn(true);
+        when(productRepository.findByReferenceAndName(reference, name)).thenReturn(prct);
 
         // Act
         Product createdProduct = productService.createProduct(reference, name, description, price);
@@ -171,22 +168,13 @@ class ProductServiceTest {
     @Test
     void updateProduct_whenNotFound() {
         long productId = 1L;
-        //String reference = "REF456";
-        //String name = "new Product";
-        //String description = "new description.";
-        //BigDecimal price = new BigDecimal("29.99");
-        Optional<Product> productToFind;
         Product productToUpdate = new Product();
         productToUpdate.setId(productId);
 
         // Mock the behavior of productRepository.findById method
         when(productRepository.findById(productId)).thenReturn(null);
-        //when(productRepository.deleteById(productId));
-        // Act
-        productToFind = productRepository.findById(productId);
-
-        //boolean isChanged = productService.updateProduct(productId,productToUpdate);
         // Assert
-        assertNull(productToFind);
+        //assertNull(productToUpdate);
+        assertFalse(productService.updateProduct(productId,productToUpdate));
     }
 }
