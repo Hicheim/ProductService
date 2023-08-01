@@ -20,9 +20,8 @@ public class ProductService {
     }
 
     public Product createProduct(String reference,String name, String description, BigDecimal price ) {
-        boolean valid = productRepository.findByReferenceAndName(reference, name);
-        //Product product = Product.builder().name(name).description(description).reference(reference).price(price).build();
-         if (!valid){
+        List<Product> valid = productRepository.findByReferenceAndName(reference, name);
+         if (valid==null){
             Product product = new Product();
             product.setDescription(description);
             product.setName(name);
@@ -50,7 +49,7 @@ public class ProductService {
     }
     public boolean updateProduct(long id, Product updatedProduct) {
         Optional<Product> productOptional = productRepository.findById(id);
-        if (productOptional.isPresent()) {
+        if (productOptional != null && productOptional.isPresent()) {
             Product product = productOptional.get();
             product.getId();
             // product.builder().name(updatedProduct.getName()).description(updatedProduct.getDescription()).reference(updatedProduct.getReference()).price(updatedProduct.getPrice()).build();

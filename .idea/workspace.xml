@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638b7228-086d-43ab-b48c-a3526ac2400b" name="Default Changelist" comment="Classe test sur le ProductController">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/shopping/product/repository/ProductRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopping/product/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopping/product/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopping/product/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopping/product/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/shopping/product/service/ProductServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/shopping/product/service/ProductServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +42,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -219,13 +222,30 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.shopping.product.repository" />
       <recent name="com.shopping.product.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.shopping.service.api.test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProductServiceTest.updateProduct_whenNotFound">
+  <component name="RunManager" selected="JUnit.ProductServiceTest">
+    <configuration name="ProductRepositoryTest.testCreateProduct_ProductDoesNotExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="product-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shopping.product.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shopping.product.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.shopping.product.repository.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="testCreateProduct_ProductDoesNotExists" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="product-service" />
       <extension name="coverage">
@@ -241,7 +261,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductServiceTest.getProductById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductServiceTest.testCreateProduct_ProductDoesNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="product-service" />
       <extension name="coverage">
         <pattern>
@@ -251,13 +271,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.shopping.product.service" />
       <option name="MAIN_CLASS_NAME" value="com.shopping.product.service.ProductServiceTest" />
-      <option name="METHOD_NAME" value="getProductById" />
+      <option name="METHOD_NAME" value="testCreateProduct_ProductDoesNotExist" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductServiceTest.updateProduct_whenFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductServiceTest.testCreateProduct_ProductExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="product-service" />
       <extension name="coverage">
         <pattern>
@@ -267,7 +287,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.shopping.product.service" />
       <option name="MAIN_CLASS_NAME" value="com.shopping.product.service.ProductServiceTest" />
-      <option name="METHOD_NAME" value="updateProduct_whenFound" />
+      <option name="METHOD_NAME" value="testCreateProduct_ProductExists" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -284,22 +304,6 @@
       <option name="PACKAGE_NAME" value="com.shopping.product.service" />
       <option name="MAIN_CLASS_NAME" value="com.shopping.product.service.ProductServiceTest" />
       <option name="METHOD_NAME" value="updateProduct_whenNotFound" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductServiceTest.updateProduct_whenfound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="product-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.shopping.product.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.shopping.product.service" />
-      <option name="MAIN_CLASS_NAME" value="com.shopping.product.service.ProductServiceTest" />
-      <option name="METHOD_NAME" value="updateProduct_whenfound" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -396,11 +400,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProductServiceTest.updateProduct_whenNotFound" />
         <item itemvalue="JUnit.ProductServiceTest" />
-        <item itemvalue="JUnit.ProductServiceTest.updateProduct_whenFound" />
-        <item itemvalue="JUnit.ProductServiceTest.updateProduct_whenfound" />
-        <item itemvalue="JUnit.ProductServiceTest.getProductById" />
+        <item itemvalue="JUnit.ProductServiceTest.updateProduct_whenNotFound" />
+        <item itemvalue="JUnit.ProductServiceTest.testCreateProduct_ProductDoesNotExist" />
+        <item itemvalue="JUnit.ProductServiceTest.testCreateProduct_ProductExists" />
+        <item itemvalue="JUnit.ProductRepositoryTest.testCreateProduct_ProductDoesNotExists" />
       </list>
     </recent_temporary>
   </component>
@@ -521,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690731519819</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Classe test sur le ProductController">
+      <created>1690735034827</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1690735034827</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -586,7 +597,7 @@
     <SUITE FILE_PATH="coverage/service$ProductServiceTest_createProductIfNotExist.ic" NAME="ProductServiceTest.createProductIfNotExist Coverage Results" MODIFIED="1688727440519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.shopping.product.service.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/service$ProductServiceTest.ic" NAME="ProductServiceTest Coverage Results" MODIFIED="1690731723465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/service$ProductServiceTest.ic" NAME="ProductServiceTest Coverage Results" MODIFIED="1690735627997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.shopping.product.service.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/service$ProductControllerTest_testCreateProduct_Success.ic" NAME="ProductControllerTest.testCreateProduct_Success Coverage Results" MODIFIED="1685970792702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
