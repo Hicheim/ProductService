@@ -39,11 +39,9 @@ class ProductRepositoryTest {
         // given
         Product product = new Product(
                 1," ", " "," ",new BigDecimal("19.99"));
-
-        underTest.save(product);
-        List<Product> Exist =
-         underTest.findByReferenceAndName(product.getReference(), product.getName());
-        //assertThat(Exist).isFalse();
+        System.out.println(underTest.findByReferenceAndName(product.getReference(), product.getName()));
+        //underTest.save(product);
+                assertThat( underTest.findByReferenceAndName(product.getReference(), product.getName())).isEmpty();
     }
 
     @DisplayName("JUnit test for CreateProduct_ProductDoesNotExist case")
@@ -52,9 +50,8 @@ class ProductRepositoryTest {
         // given
         Product product = new Product(
                 1," ", " "," ",new BigDecimal("19.99"));
-        //underTest.save(product);
-        //Boolean Exist = underTest.findByReferenceAndNameBoolean(product.getReference(), product.getName());
-        //assertThat(Exist).isTrue();
+        underTest.save(product);
+        assertThat(underTest.findByReferenceAndName(product.getReference(), product.getName())).isNotEmpty();
     }
 
 }
