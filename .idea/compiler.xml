@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="stock-service" />
         <module name="product-service" />
+        <module name="cart-service" />
         <module name="inventory-service" />
         <module name="cortex-designer-service" />
       </profile>
@@ -19,6 +20,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cart-service" options="-parameters" />
       <module name="cortex-designer-service" options="-parameters" />
       <module name="inventory-service" options="-parameters" />
       <module name="product-service" options="-parameters" />
