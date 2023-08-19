@@ -1,6 +1,5 @@
 package com.shopping.product.service;
 
-import com.shopping.product.model.Product;
 import com.shopping.product.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,6 +1,5 @@
 package com.shopping.product.service;
 
-import com.shopping.product.model.Product;
 import com.shopping.product.repository.ProductRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

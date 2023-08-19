@@ -1,13 +1,27 @@
 package com.shopping.product.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.*;
+
 import java.util.Objects;
 
 /**
  * In a real world, a customer have a lot of other information
  * The access credentials to the system, loyalty card, contact preferences, subscriptions for feeds ...
  */
+@Entity
+@Setter
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Customer {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String firstName;
     private String lastName;
