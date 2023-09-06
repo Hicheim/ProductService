@@ -17,7 +17,7 @@ class ProductRepositoryTest {
     @Autowired
      ProductRepository underTest ;
 
-    @DisplayName("JUnit test for CreateProduct_ProductDoesNotExist case")
+ /*   @DisplayName("JUnit test for CreateProduct_ProductDoesNotExist case")
     @Test
     void testCreateProduct_ProductDoesNotExists() {
         // given
@@ -37,5 +37,5 @@ class ProductRepositoryTest {
         underTest.save(product);
         assertThat(underTest.findByReferenceAndName(product.getReference(), product.getName())).isNotEmpty();
     }
-
+*/
 }

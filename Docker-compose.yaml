@@ -20,6 +20,6 @@ services:
       PGADMIN_DEFAULT_EMAIL: hichem.chaalal@gmail.com
       PGADMIN_DEFAULT_PASSWORD: shopping
     ports:
-      - 8000:80
+      - 8080:80
     depends_on:
       - db
