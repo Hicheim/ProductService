@@ -1,5 +1,6 @@
 package com.shopping.product.service;
 
+import com.shopping.product.model.Product;
 import com.shopping.product.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,7 +19,7 @@ public class ProductService {
         this.productRepository = productRepository;
     }
 
-    public Product createProduct(String reference,String name, String description, BigDecimal price ) {
+    public Product createProduct(String reference, String name, String description, BigDecimal price ) {
         List<Product> valid = productRepository.findByReferenceAndName(reference, name);
          if (valid==null){
             Product product = new Product();

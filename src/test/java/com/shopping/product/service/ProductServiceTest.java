@@ -1,5 +1,6 @@
 package com.shopping.product.service;
 
+import com.shopping.product.model.Product;
 import com.shopping.product.repository.ProductRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -37,7 +38,7 @@ class ProductServiceTest {
         String name = "Test Product";
         String description = "This is a test product.";
         BigDecimal price = new BigDecimal("19.99");
-        Product createdProduct =  new Product(1,reference,name,description,price);
+        Product createdProduct =  new Product(1L,reference,name,description,price);
         // Mock the behavior of the productRepository.findByReferenceAndName method
         when(productRepository.findByReferenceAndName(reference, name)).thenReturn(null);
         when(productRepository.save(any())).thenReturn(createdProduct);
@@ -64,7 +65,7 @@ class ProductServiceTest {
         String name = "Existing Product";
         String description = "This is an existing product.";
         BigDecimal price = new BigDecimal("29.99");
-        final Product product1 = new Product(1,reference, name, description, price);
+        final Product product1 = new Product(1L,reference, name, description, price);
         List<Product> prct=  new ArrayList<>();
         prct.add(product1);
         // Mock
