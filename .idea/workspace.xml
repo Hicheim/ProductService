@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="638b7228-086d-43ab-b48c-a3526ac2400b" name="Default Changelist" comment="Classe test sur le ProductController">
+    <list default="true" id="638b7228-086d-43ab-b48c-a3526ac2400b" name="Default Changelist" comment="Merge remote-tracking branch 'gitlab/master'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopping/product/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopping/product/repository/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/shopping/product/repository/ProductRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/shopping/product/repository/ProductRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -203,7 +201,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/project/product-service/src/test/java/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/project/shoppingcart-service&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -552,7 +550,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690896749417</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Merge remote-tracking branch 'gitlab/master'">
+      <created>1694097369465</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1694097369465</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -611,7 +616,8 @@
     <MESSAGE value="Esquisse de l'aplication. Classe Campagne somple controller. Swagger, Json" />
     <MESSAGE value="Ajout des test sur la classe ProductController" />
     <MESSAGE value="Classe test sur le ProductController" />
-    <option name="LAST_COMMIT_MESSAGE" value="Classe test sur le ProductController" />
+    <MESSAGE value="Merge remote-tracking branch 'gitlab/master'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'gitlab/master'" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/service$ProductServiceTest_createProductIfNotExist.ic" NAME="ProductServiceTest.createProductIfNotExist Coverage Results" MODIFIED="1688727440519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

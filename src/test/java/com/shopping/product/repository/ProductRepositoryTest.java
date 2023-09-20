@@ -1,5 +1,6 @@
 package com.shopping.product.repository;
 
+import com.shopping.product.model.Product;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -17,12 +18,12 @@ class ProductRepositoryTest {
     @Autowired
      ProductRepository underTest ;
 
- /*   @DisplayName("JUnit test for CreateProduct_ProductDoesNotExist case")
+    @DisplayName("JUnit test for CreateProduct_ProductDoesNotExist case")
     @Test
     void testCreateProduct_ProductDoesNotExists() {
         // given
         Product product = new Product(
-                1," ", " "," ",new BigDecimal("19.99"));
+               1L, "", " "," ",new BigDecimal("19.99"));
         System.out.println(underTest.findByReferenceAndName(product.getReference(), product.getName()));
         //underTest.save(product);
                 assertThat( underTest.findByReferenceAndName(product.getReference(), product.getName())).isEmpty();
@@ -33,9 +34,9 @@ class ProductRepositoryTest {
     void testCreateProduct_ProductExists() {
         // given
         Product product = new Product(
-                1," ", " "," ",new BigDecimal("19.99"));
+              1L, "1", " "," ",new BigDecimal("19.99"));
         underTest.save(product);
         assertThat(underTest.findByReferenceAndName(product.getReference(), product.getName())).isNotEmpty();
     }
-*/
+
 }
