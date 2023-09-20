@@ -22,5 +22,5 @@ public class Product {
     private String description;
     /* simple price implementation */
     private BigDecimal price;
-
+    /*interesting*/
    }
